@@ -1,0 +1,173 @@
+/* --- הגדרות בסיס ופונטים --- */
+:root {
+    --primary-color: #5e72e4; /* צבע כחול-סגלגל מודרני */
+    --text-color: #e9ecef; /* צבע טקסט בהיר וקריא */
+    --card-bg-color: rgba(255, 255, 255, 0.1); /* צבע רקע "זכוכית" */
+    --card-border-color: rgba(255, 255, 255, 0.25);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: #172b4d; /* צבע רקע כהה למקרה שהגרדיאנט לא נטען */
+    overflow-x: hidden; /* מניעת גלילה אופקית מיותרת */
+    direction: rtl;
+}
+
+/* --- רקע גרדיאנט متحرך --- */
+.background-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #5e72e4, #8965e0, #f5365c, #ffd600);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* --- אנימציית טעינה עדינה --- */
+.main-header, .content-container, .main-footer {
+    animation: fadeInAnimation 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.main-header { animation-delay: 0.2s; }
+.content-container { animation-delay: 0.4s; }
+.main-footer { animation-delay: 0.6s; }
+
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* --- עיצוב Header, Main, Footer --- */
+.main-header {
+    text-align: center;
+    padding: 4rem 1.5rem 2rem;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+.content-container {
+    padding: 2rem 1rem;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* --- עיצוב כרטיסיית פרויקט (Glassmorphism) --- */
+.project-card {
+    width: 350px;
+    background: var(--card-bg-color);
+    border-radius: 20px;
+    border: 1px solid var(--card-border-color);
+    backdrop-filter: blur(12px); /* אפקט הטשטוש של הזכוכית */
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-content {
+    text-align: center;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    min-height: 80px;
+}
+
+.project-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(94, 114, 228, 0.4);
+}
+
+.project-button:hover {
+    background-color: #4a5cc3;
+    transform: translateY(-2px);
+}
+
+/* --- עיצוב Footer --- */
+.main-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* !!! שינוי: עיצוב האייקונים החדשים בפוטר !!! */
+.footer-links a i {
+    font-size: 1.8rem; /* הגדלת האייקונים */
+    transition: color 0.3s ease, transform 0.3s ease; /* הוספת אנימציה */
+}
+
+.footer-links a:hover i {
+    color: var(--primary-color); /* שינוי צבע במעבר עכבר */
+    transform: translateY(-3px); /* אפקט ריחוף קטן */
+}
