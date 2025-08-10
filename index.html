@@ -1,72 +1,190 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
-    <!-- Meta תגים בסיסיים -->
+    <!-- Meta tags for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Meta תגים ל-SEO -->
-    <title>Sigarya</title>
-    <meta name="description" content="ברוכים הבאים ל-Sigarya.xyz, כאן תוכלו למצוא פרויקטים שאני מפתח, כולל 'סמנטעל פלוס', משחק מילים מאתגר בעברית.">
-    <meta name="keywords" content="Sigarya, סמנטעל, סמנטעל פלוס, משחקי מילים, פיתוח אתרים, תיק עבודות">
+    <meta name="description" content="Sigarya.xyz - Developer portfolio featuring innovative projects like Semantle Plus, a challenging Hebrew word game. Discover web development projects and creative solutions.">
+    <meta name="keywords" content="Sigarya, web development, portfolio, Semantle Plus, Hebrew word game, developer, projects, coding, programming">
+    <meta name="author" content="Sigarya">
+    <meta name="robots" content="index, follow">
     
-    <!-- קישור לקובץ העיצוב (CSS) -->
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Sigarya.xyz - Developer Portfolio">
+    <meta property="og:description" content="Discover innovative web development projects and creative solutions by Sigarya.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sigarya.xyz">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sigarya.xyz - Developer Portfolio">
+    <meta name="twitter:description" content="Discover innovative web development projects and creative solutions by Sigarya.">
+    
+    <title>Sigarya.xyz - Developer Portfolio & Projects</title>
+    
+    <!-- CSS and Fonts -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- קישור לפונטים של גוגל -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
-    <!-- !!! שינוי: הוספת ספריית האייקונים Font Awesome !!! -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- 
-      Adsense
-    -->
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8899404611945935"
-     crossorigin="anonymous"></script>
-    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8899404611945935" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <div class="background-gradient"></div>
 
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Sigarya.xyz</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
     <header class="main-header">
-        <h1>Sigarya.xyz</h1>
-        <p>כל מיני דברים מעניינים</p>
+        <h1>Welcome to Sigarya.xyz</h1>
+        <p>Innovative Web Development & Creative Solutions</p>
+        <div class="header-buttons">
+            <a href="projects.html" class="btn-primary">View Projects</a>
+            <a href="contact.html" class="btn-secondary">Get In Touch</a>
+        </div>
     </header>
 
+    <!-- Main Content -->
     <main class="content-container">
-        <section class="projects-grid">
-            
-            <!-- ====== כרטיסיית פרויקט: סמנטעל פלוס ====== -->
-            <div class="project-card">
-                <div class="project-content">
-                    <h2 class="project-title">סמנטעל פלוס</h2>
-                    <p class="project-description">
-                        גרסת מעריצים למשחק המילים "סמנטעל". במשחק זה עליכם לגלות את המילה הסודית היומית על סמך קרבה סמנטית. ועכשיו תוכלו גם לנחש את כל החידות היומיות שכבר היו!
-                    </p>
-                    <a href="https://semantle.sigarya.xyz/" target="_blank" class="project-button">שחקו עכשיו!</a>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Building Digital Experiences</h2>
+                <p>I'm a passionate developer creating innovative web applications and games that challenge and entertain users. From word games to web tools, each project is crafted with attention to detail and user experience.</p>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="featured-projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3 class="project-title">Semantle Plus</h3>
+                        <p class="project-description">
+                            A fan-made version of the word game "Semantle" in Hebrew. Challenge yourself to discover the daily secret word based on semantic similarity. Now you can also play all the previous daily puzzles!
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Hebrew</span>
+                            <span class="tag">Word Game</span>
+                            <span class="tag">Semantic</span>
+                        </div>
+                        <a href="https://semantle.sigarya.xyz/" target="_blank" class="project-button">Play Now!</a>
+                    </div>
+                </div>
+
+                <div class="project-card coming-soon">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="project-title">More Projects Coming Soon</h3>
+                        <p class="project-description">
+                            I'm constantly working on new and exciting projects. Stay tuned for more innovative web applications, games, and tools that will be added to this portfolio.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Coming Soon</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                        <div class="coming-soon-badge">In Development</div>
+                    </div>
                 </div>
             </div>
+        </section>
 
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, PHP, Databases</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first, Cross-browser compatibility</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design, Modern aesthetics</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="about-preview">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I'm a dedicated developer passionate about creating meaningful digital experiences. My focus is on building applications that are not only functional but also enjoyable to use. I believe in clean code, user-centered design, and continuous learning.</p>
+                <a href="about.html" class="btn-secondary">Learn More</a>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="main-footer">
-        <div class="footer-links">
-            <!-- !!! שינוי: החלפת הטקסט באייקונים !!! -->
-            <a href="https://github.com/Sigarya" target="_blank" aria-label="GitHub Profile">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:SemantlePlus@gmail.com" aria-label="Send Email">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sigarya.xyz</h3>
+                <p>Innovative web development and creative solutions</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/Sigarya" target="_blank" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 |  Sigarya</p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sigarya.xyz | All rights reserved</p>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

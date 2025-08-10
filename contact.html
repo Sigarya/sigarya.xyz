@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Sigarya for web development projects, collaborations, or questions. Contact form available for easy communication.">
+    <meta name="keywords" content="contact Sigarya, web developer contact, hire developer, project inquiry, collaboration, contact form">
+    <meta name="author" content="Sigarya">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Contact - Sigarya.xyz Developer">
+    <meta property="og:description" content="Get in touch with Sigarya for web development projects, collaborations, or questions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sigarya.xyz/contact.html">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - Sigarya.xyz Developer">
+    <meta name="twitter:description" content="Get in touch with Sigarya for web development projects, collaborations, or questions.">
+    
+    <title>Contact - Sigarya.xyz Developer</title>
+    
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8899404611945935" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Sigarya.xyz</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1>Get In Touch</h1>
+        <p>Let's discuss your next project or collaboration</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content-container">
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h2 class="section-title">Send Me a Message</h2>
+            <div class="form-container">
+                <form action="https://formsubmit.co/semantleplus@gmail.com" method="POST" class="contact-form" onsubmit="return validateContactForm()">
+                    <!-- Honeypot to prevent spam -->
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <!-- Disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!-- Redirect after submission -->
+                    <input type="hidden" name="_next" value="https://sigarya.xyz/contact-success.html">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="Project Inquiry">Project Inquiry</option>
+                            <option value="Collaboration">Collaboration</option>
+                            <option value="Freelance Work">Freelance Work</option>
+                            <option value="Question">General Question</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, question, or how we can work together..."></textarea>
+                    </div>
+                    
+
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- What I Can Help With -->
+        <section class="services-section">
+            <h2 class="section-title">What I Can Help You With</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Custom Web Applications</h3>
+                    <p>Full-stack web applications built with modern technologies and best practices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Website Design</h3>
+                    <p>Beautiful, mobile-first websites that work perfectly on all devices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Web Games & Interactive Apps</h3>
+                    <p>Engaging web-based games and interactive applications like Semantle Plus.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Website Maintenance</h3>
+                    <p>Ongoing support, updates, and optimization for existing websites.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your website's search engine visibility and performance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed up your website and improve user experience through optimization.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is your typical project timeline?</h3>
+                    <p>Project timelines vary depending on complexity. Simple websites typically take 2-4 weeks, while complex applications can take 2-6 months. I'll provide a detailed timeline during our initial consultation.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you work with clients internationally?</h3>
+                    <p>Yes! I work with clients worldwide and am experienced in remote collaboration. I use modern communication tools to ensure smooth project management regardless of location.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What technologies do you specialize in?</h3>
+                    <p>I specialize in modern web technologies including React, Vue.js, Node.js, and Python. I also have experience with various databases and cloud services. I choose the best technology stack for each specific project.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you provide ongoing support after launch?</h3>
+                    <p>Absolutely! I offer various support packages including maintenance, updates, and feature additions. I believe in building long-term relationships with my clients.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Whether you have a clear vision or just an idea, I'm here to help bring it to life. Let's discuss your project and explore how we can work together to create something amazing.</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="btn-primary">Start Your Project</a>
+                    <a href="projects.html" class="btn-secondary">View My Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sigarya.xyz</h3>
+                <p>Innovative web development and creative solutions</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/Sigarya" target="_blank" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sigarya.xyz | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
